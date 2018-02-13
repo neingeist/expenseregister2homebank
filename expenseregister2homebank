@@ -50,8 +50,8 @@ with open(args.expenses_csv, 'r', encoding='utf-8') as csvfile, \
         outrow = {
                 'date':    date,
                 'payment': 0,  # FIXME
-                'info':    row['description'],
                 'payee':   '',
+                'memo':    row['description'],
                 'amount':  row['type'] + row['amount'],
                 'tags': tags
         }
